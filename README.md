@@ -1,2 +1,2 @@
-# qa_java
-QA Java Project
+# Sprint_6
+Проект по Unit тестам с моками и параметризацией 
