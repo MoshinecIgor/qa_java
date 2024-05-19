@@ -5,10 +5,10 @@ import java.util.List;
 public class Lion {
 
     boolean hasMane;
-    FelineInterface feline;
+    FelineInterface feline; // Зависимость по интерфейсу FelineInterface
 
     public Lion(String sex, FelineInterface feline) throws Exception {
-        this.feline = feline;
+        this.feline = feline; // Здесь происходит инъекция зависимости через конструктор
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
