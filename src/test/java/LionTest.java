@@ -1,5 +1,5 @@
-package com.example;
-
+import com.example.FelineInterface;
+import com.example.Lion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

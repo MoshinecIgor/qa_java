@@ -1,5 +1,5 @@
-package com.example;
-
+import com.example.FelineInterface;
+import com.example.Lion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
