@@ -10,7 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class FelineTest {
-
     Feline feline;
 
     @BeforeEach
@@ -22,7 +21,6 @@ class FelineTest {
     void testEatMeat() throws Exception {
         // Задаем поведение мока для метода getFood
         doReturn(Arrays.asList("Мясо", "Рыба")).when(feline).getFood("Хищник");
-
         // Проверяем, что eatMeat возвращает правильный результат
         List<String> food = feline.eatMeat();
         assertEquals(Arrays.asList("Мясо", "Рыба"), food);
@@ -50,7 +48,6 @@ class FelineTest {
     void testGetFood() throws Exception {
         // Задаем повдение мока для метода getFood в классе Animal
         doReturn(Arrays.asList("Мясо", "Рыба")).when(feline).getFood("Хищник");
-
         // Проверяем, что метод getFood возвращает правильный результат
         List<String> food = feline.getFood("Хищник");
         assertEquals(Arrays.asList("Мясо", "Рыба"), food);
@@ -66,5 +63,4 @@ class FelineTest {
             fail("Exception should not have been thrown: " + e.getMessage());
         }
     }
-
 }
